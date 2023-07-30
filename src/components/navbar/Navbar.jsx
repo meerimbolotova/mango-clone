@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Navbar.css";
 import "./icons/icons8-search-50.png";
 import { useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { authListener, handleLogout } from "../../store/auth/authActions";
 
 const Navbar = () => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const { user } = useSelector((state) => state.auth);
+  useEffect(() => {
+    dispatch(authListener());
+  }, []);
+
   return (
     <div className="navbar-block">
       <div className="navbar-list">
@@ -19,9 +27,19 @@ const Navbar = () => {
           <div className="search">
             <input type="text" placeholder="Search" />
           </div>
-          <div className="auth" onClick={() => navigate("/register")}>
-            Sign Up
-          </div>
+          {user ? (
+            <div
+              className="auth"
+              onClick={() => dispatch(handleLogout(navigate))}
+            >
+              Sign Out
+            </div>
+          ) : (
+            <div className="auth" onClick={() => navigate("/login")}>
+              Sign In
+            </div>
+          )}
+
           {/* <div className="wishlist">mkk</div> */}
         </div>
       </div>

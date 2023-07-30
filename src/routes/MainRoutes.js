@@ -4,6 +4,7 @@ import HomePage from "../pages/HomePage";
 import NotFoundPage from "../pages/NotFoundPage";
 import { Route, Routes } from "react-router-dom";
 import RegisterPage from "../pages/RegisterPage";
+import LoginPage from "../pages/LoginPage";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
@@ -11,6 +12,7 @@ const MainRoutes = () => {
     { link: "/products", element: <ProductsPage />, id: 2 },
     { link: "*", element: <NotFoundPage />, id: 3 },
     { link: "/register", element: <RegisterPage />, id: 4 },
+    { link: "/login", element: <LoginPage />, id: 5 },
   ];
   return (
     <>

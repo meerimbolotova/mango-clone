@@ -36,6 +36,12 @@ const Register = () => {
           onChange={(e) => dispatch(setPassword(e.target.value))}
         />
         <button onClick={handleUser}>Регистрация</button>
+        <div>
+          <span>У вас уже есть аккаунт?</span>
+          <span className="signIn" onClick={() => navigate("/login")}>
+            Войти
+          </span>
+        </div>
       </div>
     </>
   );

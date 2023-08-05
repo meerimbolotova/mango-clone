@@ -6,6 +6,9 @@ const initialState = {
   password: "",
   emailError: "",
   passwordError: "",
+  userInfo: "",
+  changeEmailError: "",
+  changePasswordError: "",
 };
 
 export const authSlice = createSlice({
@@ -35,6 +38,15 @@ export const authSlice = createSlice({
     setPasswordError(state, action) {
       state.passwordError = action.payload;
     },
+    setUserInfo(state, action) {
+      state.userInfo = action.payload;
+    },
+    setChangeEmailError(state, action) {
+      state.changeEmailError = action.payload;
+    },
+    setChangePasswordError(state, action) {
+      state.changePasswordError = action.payload;
+    },
   },
 });
 
@@ -47,4 +59,7 @@ export const {
   setPassword,
   setEmailError,
   setPasswordError,
+  setUserInfo,
+  setChangeEmailError,
+  setChangePasswordError,
 } = authSlice.actions;

@@ -16,7 +16,7 @@ const Register = () => {
       password,
       navigate,
     };
-    console.log(obj);
+
     dispatch(handleSignUp(obj));
   };
 

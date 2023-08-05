@@ -1,0 +1,64 @@
+{
+  "products": [
+    {
+      "title": "Укороченный топ кружево",
+      "price": "45",
+      "category": "топ",
+      "size": "xs s m l xl",
+      "descr": "Кружево. В состав входят хлопок и лиоцелл. Облегающий фасон. Укороченная длина. Круглый вырез горловины. Длинные рукава. На спине разрез с застежкой на пуговицу. Тотальный образ.",
+      "image1": "https://st.mngbcn.com/rcs/pics/static/T5/fotos/S20/57013824_99.jpg?ts=1687431775260&imwidth=445&imdensity=2&impolicy=featured",
+      "image2": "https://st.mngbcn.com/rcs/pics/static/T5/fotos/outfit/S20/57013824_99-99999999_01.jpg?ts=1687431775260&imwidth=445&imdensity=2&impolicy=featured",
+      "image3": "https://st.mngbcn.com/rcs/pics/static/T5/fotos/S20/57013824_99_R.jpg?ts=1687431775260&imwidth=445&imdensity=2&impolicy=featured",
+      "image4": "https://st.mngbcn.com/rcs/pics/static/T5/fotos/S20/57013824_99_D1.jpg?ts=1687431775260&imwidth=445&imdensity=2&impolicy=featured",
+      "id": 1
+    },
+    {
+      "title": "Укороченный топ кружево",
+      "price": "45",
+      "category": "топ",
+      "size": "xs s m l xl",
+      "descr": "Кружево. В состав входят хлопок и лиоцелл. Облегающий фасон. Укороченная длина. Круглый вырез горловины. Длинные рукава. На спине разрез с застежкой на пуговицу. Тотальный образ.",
+      "image1": "https://st.mngbcn.com/rcs/pics/static/T5/fotos/S20/57013824_99.jpg?ts=1687431775260&imwidth=445&imdensity=2&impolicy=featured",
+      "image2": "https://st.mngbcn.com/rcs/pics/static/T5/fotos/outfit/S20/57013824_99-99999999_01.jpg?ts=1687431775260&imwidth=445&imdensity=2&impolicy=featured",
+      "image3": "https://st.mngbcn.com/rcs/pics/static/T5/fotos/S20/57013824_99_R.jpg?ts=1687431775260&imwidth=445&imdensity=2&impolicy=featured",
+      "image4": "https://st.mngbcn.com/rcs/pics/static/T5/fotos/S20/57013824_99_D1.jpg?ts=1687431775260&imwidth=445&imdensity=2&impolicy=featured",
+      "id": 2
+    },
+    {
+      "title": "Укороченный топ кружево",
+      "price": "45",
+      "category": "топ",
+      "size": "xs s m l xl",
+      "descr": "Кружево. В состав входят хлопок и лиоцелл. Облегающий фасон. Укороченная длина. Круглый вырез горловины. Длинные рукава. На спине разрез с застежкой на пуговицу. Тотальный образ.",
+      "image1": "https://st.mngbcn.com/rcs/pics/static/T5/fotos/S20/57013824_99.jpg?ts=1687431775260&imwidth=445&imdensity=2&impolicy=featured",
+      "image2": "https://st.mngbcn.com/rcs/pics/static/T5/fotos/outfit/S20/57013824_99-99999999_01.jpg?ts=1687431775260&imwidth=445&imdensity=2&impolicy=featured",
+      "image3": "https://st.mngbcn.com/rcs/pics/static/T5/fotos/S20/57013824_99_R.jpg?ts=1687431775260&imwidth=445&imdensity=2&impolicy=featured",
+      "image4": "https://st.mngbcn.com/rcs/pics/static/T5/fotos/S20/57013824_99_D1.jpg?ts=1687431775260&imwidth=445&imdensity=2&impolicy=featured",
+      "id": 3
+    },
+    {
+      "title": "Укороченный топ кружево",
+      "price": "45",
+      "category": "топ",
+      "size": "xs s m l xl",
+      "descr": "Кружево. В состав входят хлопок и лиоцелл. Облегающий фасон. Укороченная длина. Круглый вырез горловины. Длинные рукава. На спине разрез с застежкой на пуговицу. Тотальный образ.",
+      "image1": "https://st.mngbcn.com/rcs/pics/static/T5/fotos/S20/57013824_99.jpg?ts=1687431775260&imwidth=445&imdensity=2&impolicy=featured",
+      "image2": "https://st.mngbcn.com/rcs/pics/static/T5/fotos/outfit/S20/57013824_99-99999999_01.jpg?ts=1687431775260&imwidth=445&imdensity=2&impolicy=featured",
+      "image3": "https://st.mngbcn.com/rcs/pics/static/T5/fotos/S20/57013824_99_R.jpg?ts=1687431775260&imwidth=445&imdensity=2&impolicy=featured",
+      "image4": "https://st.mngbcn.com/rcs/pics/static/T5/fotos/S20/57013824_99_D1.jpg?ts=1687431775260&imwidth=445&imdensity=2&impolicy=featured",
+      "id": 4
+    },
+    {
+      "title": "Атласное платье с рукавами-фонариками",
+      "price": "12000",
+      "category": "Dress",
+      "size": "XS S M L XL",
+      "descr": "Ткань с атласным блеском. Струящаяся ткань. Прямой фасон. Длинный фасон. V-образный вырез горловины с завязками. Длинные рукава-фонарики. Эластичные манжеты. Пояс с эластичной резинкой. Без застежки. Доступно в Plus.",
+      "image1": "https://st.mngbcn.com/rcs/pics/static/T5/fotos/S20/57084762_59.jpg?ts=1688130172020&imwidth=445&imdensity=2&impolicy=featured",
+      "image2": "https://st.mngbcn.com/rcs/pics/static/T5/fotos/outfit/S20/57084762_59-99999999_01.jpg?ts=1688130172020&imwidth=445&imdensity=2&impolicy=featured",
+      "image3": "https://st.mngbcn.com/rcs/pics/static/T5/fotos/S20/57084762_59_R.jpg?ts=1688130172020&imwidth=445&imdensity=2&impolicy=featured",
+      "image4": "https://st.mngbcn.com/rcs/pics/static/T5/fotos/S20/57084762_59_D1.jpg?ts=1688130172020&imwidth=445&imdensity=2&impolicy=featured",
+      "id": 5
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+.card-block {
+  width: 24%;
+  cursor: pointer;
+}
+.card-block:hover {
+  opacity: 0.5;
+  transition: all 0.5s;
+}
+.card-image {
+  width: 100%;
+}

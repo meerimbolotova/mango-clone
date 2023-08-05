@@ -1,0 +1,50 @@
+.details {
+  display: flex;
+}
+.details-image-block {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.details-image {
+  width: 49.5%;
+  margin-bottom: 0.4%;
+}
+.details-descr-block {
+  width: 28%;
+  margin: auto;
+  margin-top: 3%;
+}
+.title-price-block {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.title-price {
+  width: 40%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  opacity: 0.8;
+}
+.title-price:nth-child(2) {
+  width: 25%;
+}
+.size-block {
+  width: 85%;
+  margin: auto;
+}
+.description {
+  width: 85%;
+  margin: auto;
+}
+.wishlist-btn {
+  width: 60%;
+  margin: auto;
+  height: 2rem;
+  background-color: rgb(10, 10, 10);
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 1%;
+}

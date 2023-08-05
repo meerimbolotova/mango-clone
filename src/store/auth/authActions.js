@@ -2,9 +2,12 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import {
   clearErrors,
   clearInputs,
+  setChangeEmailError,
+  setChangePasswordError,
   setEmailError,
   setPasswordError,
   setUser,
+  setUserInfo,
 } from "./authSlice";
 import fire from "../../fire";
 
@@ -60,7 +63,7 @@ export const handleLogin = createAsyncThunk(
 export const authListener = createAsyncThunk(
   "@auth/authListener",
   async (_, { dispatch }) => {
-    fire.auth().onAuthStateChanged((user) => {
+    await fire.auth().onAuthStateChanged((user) => {
       if (user) {
         dispatch(clearInputs());
         dispatch(setUser(user?.email));
@@ -76,5 +79,49 @@ export const handleLogout = createAsyncThunk(
   async (navigate) => {
     await fire.auth().signOut();
     navigate("/login");
+  }
+);
+
+export const getAuthInfo = createAsyncThunk(
+  "@auth/getAuthInfo",
+  async (_, { dispatch }) => {
+    const user = fire.auth().currentUser;
+    console.log(user.email);
+    if (user.email) {
+      dispatch(setUserInfo(user.email));
+    } else {
+      dispatch(setUserInfo(""));
+    }
+  }
+);
+
+export const changeEmail = createAsyncThunk(
+  "@auth/changeEmail",
+  async (newEmail) => {
+    await fire
+      .auth()
+      .currentUser.updateEmail(newEmail)
+      .then(() => {
+        setChangeEmailError("Почта изменена!");
+      })
+      .catch((err) => {
+        setChangeEmailError(err.message);
+        console.log(err.message);
+      });
+  }
+);
+
+export const changePassword = createAsyncThunk(
+  "@auth/changePassword",
+  async (newPassword) => {
+    await fire
+      .auth()
+      .currentUser.updatePassword(newPassword)
+      .then(() => {
+        setChangePasswordError("Пароль изменён!");
+      })
+      .catch((err) => {
+        setChangePasswordError(err.message);
+      });
   }
 );

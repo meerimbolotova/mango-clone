@@ -1,6 +1,17 @@
+.login-block {
+  width: 40%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3%;
+}
 .signUp {
   text-decoration: underline;
   font-weight: 600;
   padding-left: 2%;
   cursor: pointer;
+}
+.login-block > input {
+  height: 2rem;
+  margin-bottom: 1%;
 }

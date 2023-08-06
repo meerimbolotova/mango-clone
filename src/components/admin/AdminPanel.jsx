@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addProduct } from "../../store/products/productsActions";
+import "./AdminPanel.css";
 
 const AdminPanel = () => {
   const [title, setTitle] = useState("");
@@ -40,7 +41,7 @@ const AdminPanel = () => {
   };
   return (
     <div>
-      <div>
+      <div className="admin-inputs">
         <input
           type="text"
           placeholder="Название"

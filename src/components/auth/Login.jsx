@@ -21,7 +21,7 @@ const Login = () => {
   };
   return (
     <>
-      <div className="register-block">
+      <div className="login-block">
         <input
           type="text"
           placeholder="Email"

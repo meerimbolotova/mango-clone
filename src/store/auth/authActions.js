@@ -19,7 +19,7 @@ export const handleSignUp = createAsyncThunk(
       .auth()
       .createUserWithEmailAndPassword(obj.email, obj.password)
       .then(() => {
-        obj.navigate("/login");
+        obj.navigate("/");
       })
       .catch((err) => {
         switch (err.code) {

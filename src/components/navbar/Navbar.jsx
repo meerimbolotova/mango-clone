@@ -14,13 +14,14 @@ import {
   setChangeEmailError,
   setChangePasswordError,
 } from "../../store/auth/authSlice";
+import { admin } from "../../helpers/consts";
 
 const Navbar = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [showModal, setShowModal] = useState(false);
 
-  const { user, userInfo, changeEmailError, changePasswordError } = useSelector(
+  const { user, userInfo, changeEmailError } = useSelector(
     (state) => state.auth
   );
   console.log(changeEmailError);
@@ -47,6 +48,7 @@ const Navbar = () => {
           <img
             src="https://st.mngbcn.com/images/headerNew/logos/mango.svg"
             alt="logo"
+            onClick={() => navigate("/")}
           />
         </div>
         <div className="navbar-auth">
@@ -72,7 +74,11 @@ const Navbar = () => {
             </div>
           )}
         </div>
-        <div onClick={() => navigate("/admin")}>Админ</div>
+        {user == admin && (
+          <div onClick={() => navigate("/admin")} style={{ cursor: "pointer" }}>
+            Админ
+          </div>
+        )}
       </div>
       {showModal && (
         <div className="profile-modal-block">
@@ -83,7 +89,6 @@ const Navbar = () => {
             X
           </button>
           <div>
-            <img src={image} alt="" />
             <span>{userInfo}</span>
           </div>
           <br />
@@ -104,11 +109,10 @@ const Navbar = () => {
           <div>{changeEmailError && <span>{changeEmailError}</span>}</div>
 
           <br />
-          <br />
           <div>
             <span>Изменить пароль</span>
           </div>
-          <div>
+          <div className="pass-block">
             <input
               type="text"
               value={userPassword}
